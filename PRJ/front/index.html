@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Apartamentos São Carlos</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  
+</head>
+<body>
+	<div class="container-fluid" style="background-image: url(bg.jpg);">
+		<div class="container-md" style="background-color: #00bcd4  " style="position: center" >
+	<p>&nbsp;</p>
+	<h1 class="text-md-center" style="color: white">Média e Informações Sobre Apartamentos para Locação em São Carlos</h1>
+	<div class="row">
+	  <div class="col"></div>
+	  <div class="col">
+	  	<form name="MediaTodos" action="consultaMT.php" method="POST">
+		<p class="text-md-center" style="color: white">Para média total, clique abaixo:<br>
+			<button type="submit" name="consultaMediaTodos" class="btn btn-secondary" >Consultar</button>
+		</p>
+	</form>
+	  </div>
+	  <div class="col"></div>
+	</div>
+	<div class="row">
+	  	<div class="col"></div>
+	  	<div class="col">
+	  		<form name="MediaTodos" action="listarTodos.php" method="POST">
+				<form name="ListarTodos" action="listarTodos.php" method="POST">
+					<p class="text-md-center" style="color: white">Para listar todos clique abaixo:<br>
+						<button type="submit" name="consultaListaTodos" class="btn btn-secondary">Listar</button>
+					</p>
+				</form>
+			</form>
+	  	</div>
+	 	<div class="col"></div>
+	</div>
+	<div class="row">
+  		<div class="col"></div>
+  		<div class="col">
+  			<form action="consultaMB.php" method="POST">
+		<p class="text-md-center" style="color: white">Para média por bairro escolha o bairro abaixo:
+		<select id="imoveis" name="bairro"class="custom-select">
+			<option selected>Escolha o bairro</option>
+			<option value="centro">Centro</option>
+			<option value="cidade jardim">Cidade Jardim</option>
+			<option value="jardim lutfalla">Jardim Lutfalla</option>
+			<option value="vila brasília">Vila Brasília</option>
+			<option value="jardim paraiso">Jardim Paraiso</option>
+			<option value="recreio são judas tadeu">Recreio São Judas Tadeu</option>
+			<option value="arnold schimidt">Arnold Schimidt</option>
+			<option value="parque faber">Parque Faber</option>
+			<option value="jardim são carlos">Jardim São Carlos</option>
+			<option value="santa paula">Santa Paula</option>
+			<option value="jardim ipanema">Jardim Ipanema</option>
+			<option value="jardim macarengo">Jardim Macarengo</option>
+			<option value="jardim alvorada">Jardim Alvorada</option>
+			<option value="vila costa do sol">Vila Costa Do Sol</option>
+			<option value="jardim gibertoni">Jardim Gibertoni</option>
+			<option value="jardim paulistano">Jardim Paulistano</option>
+			<option value="vila monteiro">Vila Monteiro</option>
+			<option value="vila nery">Vila Nery</option>
+			<option value="jardim bandeirantes">Jardim Bandeirantes</option>
+			<option value="jockey clube">Jockey Clube</option>
+			<option value="santa felicia">Santa Felicia</option>
+			<option value="vila izabel">Vila Izabel</option>
+			<option value="vila marina">Vila Marina</option>
+			<option value="jardim acapulco">Jardim Acapulco</option>
+			<option value="nova santa paula">Nova Santa Paula</option>
+			<option value="jardim brasil">Jardim Brasil</option>
+			<option value="parque sabará">Parque Sabará</option>
+			<option value="costantino amstalden">Costantino Amstalden</option>
+			<option value="jardim bethânia">Jardim Bethânia</option>
+			<option value="vila celina">Vila Celina</option>
+			<option value="vila pureza">Vila Pureza</option>
+			<option value="jardim gilbertoni">Jardim Gilbertoni</option>
+			<option value="jardim jóckei club A">Jardim Jóckei Club A</option>
+			<option value="romeu santini">Romeu Santini</option>
+			<option value="romeu tortorelli">Romeu Tortorelli</option>
+			<option value="nova são carlos">Nova São Carlos</option>
+			<option value="jardim centenário">Jardim Centenário</option>
+			<option value="jardim santa paula">Jardim Santa Paula</option>
+			<option value="lagoa serena">Lagoa Serena</option>
+			<option value="recreio dos bandeirantes">Recreio Dos Bandeirantes</option>
+			<option value="dist dnd m abdelnur">Dist Ind M Abdelnur</option>
+			<option value="jardim das torres">Jardim Das Torres</option>
+			<option value="jardim hikare">Jardim Hikare</option>
+			<option value="parque santa marta">Parque Santa Marta</option>
+			<option value="parque santa mônica">Parque Santa Mônica</option>
+			<option value="são joão batista">São João Batista</option>
+			<option value="vila arnaldo">Vila Arnaldo</option>
+			<option value="botafogo">Botafogo</option>
+			<option value="jardim botafogo 1">Jardim Botafogo 1</option>
+			<option value="jardim embaré">Jardim Embaré</option>
+			<option value="orizzonti san carlo">Orizzonti San Carlo</option>
+			<option value="paraiso">Paraiso</option>
+			<option value="vila prado">Vila Prado</option>
+			<option value="vila rancho velho">Vila Rancho Velho</option>
+			<option value="jardim ricetti">Jardim Ricetti</option>
+			<option value="jardim são paulo">Jardim São Paulo</option>
+			<option value="jardim tangará">Jardim Tangará</option>
+			<option value="planalto paraiso">Planalto Paraiso</option>
+			<option value="silvio vilari">Silvio Vilari</option>
+			<option value="vila jacobucci">Vila Jacobucci</option>
+ 	 	</select><br>
+ 	 	<button type="submit" class="btn btn-secondary">Consultar</button>
+ 	 	</p>
+	</form>
+  		</div>
+  		<div class="col"></div>
+	</div>
+	<div class="row">
+	  	<div class="col"></div>
+	  	<div class="col">
+	  		<form action="listarBairro.php" method="POST">
+		<p class="text-md-center" style="color: white">Para listar todos imoveis por bairro escolha o bairro abaixo:
+		<select id="imoveis" name="bairro"class="custom-select">
+			<option selected>Escolha o bairro</option>
+			<option value="centro">Centro</option>
+			<option value="cidade jardim">Cidade Jardim</option>
+			<option value="jardim lutfalla">Jardim Lutfalla</option>
+			<option value="vila brasília">Vila Brasília</option>
+			<option value="jardim paraiso">Jardim Paraiso</option>
+			<option value="recreio são judas tadeu">Recreio São Judas Tadeu</option>
+			<option value="arnold schimidt">Arnold Schimidt</option>
+			<option value="parque faber">Parque Faber</option>
+			<option value="jardim são carlos">Jardim São Carlos</option>
+			<option value="santa paula">Santa Paula</option>
+			<option value="jardim ipanema">Jardim Ipanema</option>
+			<option value="jardim macarengo">Jardim Macarengo</option>
+			<option value="jardim alvorada">Jardim Alvorada</option>
+			<option value="vila costa do sol">Vila Costa Do Sol</option>
+			<option value="jardim gibertoni">Jardim Gibertoni</option>
+			<option value="jardim paulistano">Jardim Paulistano</option>
+			<option value="vila monteiro">Vila Monteiro</option>
+			<option value="vila nery">Vila Nery</option>
+			<option value="jardim bandeirantes">Jardim Bandeirantes</option>
+			<option value="jockey clube">Jockey Clube</option>
+			<option value="santa felicia">Santa Felicia</option>
+			<option value="vila izabel">Vila Izabel</option>
+			<option value="vila marina">Vila Marina</option>
+			<option value="jardim acapulco">Jardim Acapulco</option>
+			<option value="nova santa paula">Nova Santa Paula</option>
+			<option value="jardim brasil">Jardim Brasil</option>
+			<option value="parque sabará">Parque Sabará</option>
+			<option value="costantino amstalden">Costantino Amstalden</option>
+			<option value="jardim bethânia">Jardim Bethânia</option>
+			<option value="vila celina">Vila Celina</option>
+			<option value="vila pureza">Vila Pureza</option>
+			<option value="jardim gilbertoni">Jardim Gilbertoni</option>
+			<option value="jardim jóckei club A">Jardim Jóckei Club A</option>
+			<option value="romeu santini">Romeu Santini</option>
+			<option value="romeu tortorelli">Romeu Tortorelli</option>
+			<option value="nova são carlos">Nova São Carlos</option>
+			<option value="jardim centenário">Jardim Centenário</option>
+			<option value="jardim santa paula">Jardim Santa Paula</option>
+			<option value="lagoa serena">Lagoa Serena</option>
+			<option value="recreio dos bandeirantes">Recreio Dos Bandeirantes</option>
+			<option value="dist dnd m abdelnur">Dist Ind M Abdelnur</option>
+			<option value="jardim das torres">Jardim Das Torres</option>
+			<option value="jardim hikare">Jardim Hikare</option>
+			<option value="parque santa marta">Parque Santa Marta</option>
+			<option value="parque santa mônica">Parque Santa Mônica</option>
+			<option value="são joão batista">São João Batista</option>
+			<option value="vila arnaldo">Vila Arnaldo</option>
+			<option value="botafogo">Botafogo</option>
+			<option value="jardim botafogo 1">Jardim Botafogo 1</option>
+			<option value="jardim embaré">Jardim Embaré</option>
+			<option value="orizzonti san carlo">Orizzonti San Carlo</option>
+			<option value="paraiso">Paraiso</option>
+			<option value="vila prado">Vila Prado</option>
+			<option value="vila rancho velho">Vila Rancho Velho</option>
+			<option value="jardim ricetti">Jardim Ricetti</option>
+			<option value="jardim são paulo">Jardim São Paulo</option>
+			<option value="jardim tangará">Jardim Tangará</option>
+			<option value="planalto paraiso">Planalto Paraiso</option>
+			<option value="silvio vilari">Silvio Vilari</option>
+			<option value="vila jacobucci">Vila Jacobucci</option>
+ 	 	</select><br>
+ 		<button type="submit" class="btn btn-secondary">Listar</button>
+ 	</p>
+	</form>
+	  	</div>
+	 	<div class="col"></div>
+	</div>
+	<div class="row">
+	  <div class="col"></div>
+	  <div class="col">
+	  	<form name="ListarTodos" action="consultaMQ.php" method="POST">
+		<p class="text-md-center" style="color: white">Para consultar a media por numero de quarto clique abaixo:<br>
+		<select id="imoveis" name="numeroQuarto"class="custom-select">
+			<option selected>Escolha o número de quartos</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select><br>
+		<button type="submit" name="consultaMediaQuarto" class="btn btn-secondary">Consultar</button>
+		</p>
+	</form>
+	  </div>
+	  <div class="col"></div>
+	</div>
+	<div class="row">
+	  <div class="col"></div>
+	  <div class="col">
+	  		<form name="ListarTodos" action="listarQuarto.php" method="POST">
+		<p class="text-md-center" style="color: white">Para listar por numero de quarto clique abaixo:<br>
+		<select id="imoveis" name="numeroQuarto"class="custom-select">
+			<option selected>Escolha o número de quartos</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select><br>
+		<button type="submit" name="consultaTodosQuarto" class="btn btn-secondary">Listar</button>
+		</p>
+	</form>
+	  </div>
+	  <div class="col"></div>
+	</div>	
+</div>
+</div>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+  
+  <footer>
+  	<div class="container-fluid" style="background-color: #00838f">
+	  	<div class="container-md" style="background-color: #00838f  " style="position: center" >
+	  		<div class="row">
+			  <div class="col"></div>
+			  <div class="col">
+			  	<p class="text-md-center" style="color: white">DESENVOLVIDO POR ANA PAULA DE OLIVEIRA</p>
+			  </div>
+			  <div class="col"></div>
+			</div>
+		</div>
+	</div>
+  	</footer>
+
+</html>

@@ -1,0 +1,15 @@
+create database imobiliaria;
+
+use imobiliaria;
+
+create table apartamento(
+idBD integer NOT NULL AUTO_INCREMENT, 
+bairroBD varchar(30),
+enderecoBD varchar(50),
+valorBD varchar(10),
+areaBD varchar(5),
+quartoBD varchar(3),
+banheiroBD varchar(3),
+vagaBD varchar(3),
+primary key(idBD)
+);
